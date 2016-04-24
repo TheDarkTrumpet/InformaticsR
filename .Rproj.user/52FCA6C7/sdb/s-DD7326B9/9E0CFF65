@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(ggplot2)\n\n# mtcars = test data set.\nqplot(mtcars$mpg)\n\nqplot(cyl, mpg, data=mtcars)\nqplot(mpg, qsec, data=mtcars)\n\nqplot(mpg, data=mtcars, geom=\"density\")     # Line Graph\nqplot(wt, mpg, data=mtcars, geom=\"smooth\")  # Smooth Line (Ribbon)\n\nqplot(wt, mpg, data=mtcars, geom=c(\"smooth\", \"point\"))  # Smooth Line (Ribbon)\nqplot(mpg, qsec, data=mtcars, geom=c(\"smooth\", \"point\"))  # Smooth Line (Ribbon)\n\nqplot(wt, mpg, data=mtcars, geom=c(\"boxplot\", \"jitter\"), fill=gear)\n\n# Make a copy of mtcars\nmtCars2 <- mtcars\nmtCars2$cyl <- factor(mtcars$cyl, levels=c(4,6,8), labels=c(\"4cyl\", \"6cyl\", \"8cyl\"))\n\nmtcars$cyl\nmtCars2$cyl  # Replaced 4 = 4cyl, 6 = 6cyl, 8 = 8cyl -- did this above\n\n# Various of the same general plot\nqplot(cyl, mpg, data=mtCars2, geom=\"boxplot\")\nqplot(cyl, mpg, data=mtCars2, geom=c(\"boxplot\", \"jitter\"), fill=gear)\nqplot(cyl, mpg, data=mtCars2, geom=c(\"boxplot\", \"jitter\"), fill=gear)\nqplot(cyl, mpg, data=mtCars2, geom=c(\"boxplot\", \"jitter\"), fill=cyl)\n",
+    "created" : 1461439733925.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1662198880",
+    "id" : "9E0CFF65",
+    "lastKnownWriteTime" : 1461444053,
+    "last_content_update" : 1461444053901,
+    "path" : "~/Programming/RSeminar/Visualization.R",
+    "project_path" : "Visualization.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

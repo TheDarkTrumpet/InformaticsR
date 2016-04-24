@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "# Some of this information is taken from RSeminarScript, and some from Visualization\n# it is more playing around with data\n\ndf1 = data.frame(id=1:6,\n  gender=factor(rep(c(\"M\",\"F\"),3)),\n  treatment1=factor(rep(LETTERS[1:3],2)),\n  treatment2=factor(rep(LETTERS[1:2],each=3)),\n  response=rnorm(6))\n\n# Selecting information from the dataframe (All do the same thing)\ndf1[df1$treatment1 == 'C',]\ndf1[c(3,6),]\ndf1[with(df1, which(treatment1==\"C\")),]",
+    "created" : 1461458796278.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2465303451",
+    "id" : "9D78D882",
+    "lastKnownWriteTime" : 1461458960,
+    "last_content_update" : 1461458960165,
+    "path" : "~/Programming/RSeminar/playground.R",
+    "project_path" : "playground.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
